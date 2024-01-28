@@ -1,0 +1,46 @@
+/* Add this in your static/css/style.css file */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: #009578; /* Replace with your preferred color or background image */
+  color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.feature {
+  max-width: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+.btn-sign-up {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background: #005f50;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.btn-sign-up:hover {
+  background: #004f40;
+}

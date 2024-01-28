@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Platform</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header class="hero-section">
+      <h1>Welcome to Our Social Media Platform</h1>
+      <p>Connect, Share, and Explore</p>
+      <a href="{% url 'register' %}" class="btn-sign-up">Sign Up Today</a>
+      <br />
+      <a href="{% url 'login' %}" class="btn-sign-up">Login</a>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <h2>Connect with Friends</h2>
+        <p>Build your community and stay in touch with friends.</p>
+      </div>
+      <div class="feature">
+        <h2>Share Your Moments</h2>
+        <p>Share your daily moments and highlights with others.</p>
+      </div>
+      <div class="feature">
+        <h2>Discover New Stories</h2>
+        <p>Explore content tailored to your interests.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Renos Kerkides</p>
+    </footer>
+  </body>
+</html>

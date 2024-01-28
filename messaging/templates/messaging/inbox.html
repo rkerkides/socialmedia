@@ -1,0 +1,15 @@
+<!-- messaging/templates/messaging/inbox.html -->
+{% extends 'base.html' %} {% block content %}
+<h2>Inbox</h2>
+<div class="messages">
+  {% for message in messages %}
+  <div class="message">
+    <strong>From:</strong> {{ message.sender.username }}<br />
+    <strong>Message:</strong> {{ message.content }}<br />
+    <span class="timestamp">{{ message.timestamp }}</span>
+  </div>
+  {% empty %}
+  <p>No messages yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}
